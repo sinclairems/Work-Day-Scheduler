@@ -1,3 +1,14 @@
+// ** Pseudocode ** //
+// Use dayjs to display the current date and time in the header
+// Create time blocks for each hour of the work day
+// Create a text area for the user to enter tasks/meetings/events
+// Create a button to save the text
+// Add a listener for click events on the save button
+// Use the id in the containing time-block as a key to save the user input in local storage
+// When the page is refreshed, get any user input that was saved in localStorage and set the values of the corresponding textarea elements
+// Add code to apply the past, present, or future class to each time block by comparing the id to the current hour
+
+
 // Variables
 var currentDayEl = $("#currentDay");
 var containerEl = $(".container");
@@ -21,7 +32,14 @@ var saveBtn = $(".saveBtn");
 var textArea = $("textarea");
 
 
-
+// Use this for style:
+{/* <div id="hour-9" class="row time-block past">
+            <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
+            <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+            <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+                <i class="fas fa-save" aria-hidden="true"></i>
+            </button>
+        </div> */}
 
 
 // Functions
@@ -51,37 +69,6 @@ var textArea = $("textarea");
   // TODO: Add code to display the current date in the header of the page.
 
 
-// unused code
-// Create header with current date and time
-// var scheduler = $('#scheduler');
-// var now = dayjs().format('MMM DD, YYYY [at] hh:mm:ss a');
-// var currentDay = $('<h1>');
 
-// function displayTime() {
-//   currentDay.text(now);
-// }
 
-// // Create a for loop that creates a div for each hour of the day
-// for (var i = 9; i < 18; i++) {
-//     var timeBlock = $('<div>');
-//     timeBlock.addClass('time-block');
-//     timeBlock.attr('id', 'hour-' + i);
-//     scheduler.append(timeBlock);
 
-//     // Create a div for the hour
-//     var hour = $('<div>');
-//     hour.addClass('hour');
-//     hour.text(i + ':00');
-//     timeBlock.append(hour);
-
-//     // Create a textarea for the user to enter text
-//     var textArea = $('<textarea>');
-//     textArea.addClass('description');
-//     timeBlock.append(textArea);
-
-//     // Create a button to save the text
-//     var saveBtn = $('<button>');
-//     saveBtn.addClass('saveBtn');
-//     saveBtn.text('Save');
-//     timeBlock.append(saveBtn);
-// }
