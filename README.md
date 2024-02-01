@@ -9,16 +9,14 @@ I used the [Day.js](https://day.js.org/en/) library to work with date and time.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-    ![alt text](assets/images/screenshot.png)
+Here is where to use the app! https://sinclairems.github.io/Work-Day-Scheduler/
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+I used class notes and MDN. 
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+Eventually I found an example by a fellow bootcamper and borrowed some JS code to make this app work. https://github.com/sylviaprabudy/work-day-scheduler
 
 ## License
+
+See the License file for details
