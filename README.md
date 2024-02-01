@@ -11,6 +11,8 @@ I used the [Day.js](https://day.js.org/en/) library to work with date and time.
 
 Here is where to use the app! https://sinclairems.github.io/Work-Day-Scheduler/
 
+![screenshot](assets/images/screenshot-1.png)
+
 ## Credits
 
 I used class notes and MDN. 
